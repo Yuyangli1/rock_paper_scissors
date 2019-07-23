@@ -1,0 +1,45 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="header">
+        <h2>Rock Paper Scissors Game</h2>
+    </div>      
+    <div class="mainBody">
+        <div class="instructions">
+            <p>Instructions:</p>
+            <ul>
+                <li>Click start game to begin.</li>
+                <li>Rock beats scissors, paper beats rock, scissors beats paper.</li>
+                <li>First to 5 wins.</li>
+            </ul>
+        </div>
+        <div class="resultsContainer">
+          <div class="results"></div>
+        </div>
+        <div class="scoreboard">
+            <p>Current Score:</p>
+            <p>You: <span class="playerScore">0</span></p>
+            <p>Computer: <span class="computerScore">0</span></p>
+        </div>
+    </div>
+    <div class="buttons">
+        <input type="button" value="Start Game" id="start" onclick="startGame()">
+        <input type="button" value="Rock" id="rock" onclick="playRound('rock');">
+        <input type="button" value="Paper" id="paper" onclick="playRound('paper')">
+        <input type="button" value="Scissors" id="scissors" onclick="playRound('scissors')">
+    </div>
+
+  </div>
+
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
